@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  search-app:
+    image: number-search:v1.0
+    container_name: search-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
