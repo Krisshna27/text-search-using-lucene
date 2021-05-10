@@ -82,6 +82,9 @@ Run docker container   : ```docker-compose up -d```
 3. Error handling is done generically, more specific exceptions can be created to handle all corner cases.
    Corner cases not covered under current scope.
    - Supplying multipart request body to text search and viceversa.
+4. If a number is represented in word, such as (Seven) in place "7", below are the possible solutions.
+   - Regex can be modified to include list of numbers in words to match.
+   - Create queries to  include numbers in words query to do a parallel search along with words.
    
 ### External to application
 1. Store the files in databases like Apache Solr, Elastic where the search feature is provided out-of-box. 
